@@ -1,4 +1,4 @@
-.background-cr { background-color: #dad3ce ; }
+.background-cr { background-color: #FDF6E3 ; /* พื้นหลังสีเบจอ่อน */ }
 
 
 .image-right {
@@ -9,7 +9,7 @@
     }
 
     .cover-top {
-  background-color: #f5f5dc; /* สีครีม */
+  background-color:#d8b995; /* สีครีม */
   color: #333;
   font-family: 'Georgia', serif;
   padding: 80px;
@@ -63,13 +63,14 @@
 .text-fr {
   font-family: "Anuphan", sans-serif;
     font-style: normal;
-    font-size: 25px;
+    font-size: 30px;
    }
 
    .text-fr-2 {
   font-family: "Anuphan", sans-serif;
     font-style: normal;
     font-size: 20px;
+    color: #4e0d11;
    }
 
    .text-fr-3 {
@@ -77,3 +78,90 @@
     font-style: normal;
     font-size: 15px;
    }
+
+   .text-colour {
+    color: 4d0e11 ;
+   }
+
+   /* กล่อง accordion ทั้งหมด */
+.accordion {
+  background-color: #f5e3c8; /* สีพื้นหลังโทนน้ำตาลอ่อน */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* หัวข้อของ accordion (ยังไม่คลิก) */
+.accordion-button {
+  background-color: #f7e8d0; /* สีเบจอ่อน */
+  color: #4e0d11;           /* สีน้ำตาลเข้ม */
+  font-family: 'Pridi', serif;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* เมื่อ hover เมาส์ */
+.accordion-button:hover {
+  background-color: #eed3b1; /* เข้มขึ้นเล็กน้อย */
+  color: #3b080b;
+}
+
+/* เมื่อ accordion ถูกเปิดอยู่ (active) */
+.accordion-button:not(.collapsed) {
+  background-color: #e3c9aa; /* น้ำตาลอบอุ่นเข้มขึ้น */
+  color: #4e0d11;
+  box-shadow: none;
+}
+
+/* เนื้อหาภายใน accordion */
+.accordion-body {
+  background-color: #fff8ef; /* พื้นสีครีมอ่อนนวล */
+  color: #4e0d11;
+  font-size: 17px;
+  line-height: 1.7;
+  border-top: 1px solid #d1b18a;
+}
+
+/* เส้นขอบรอบกล่อง */
+.accordion-item {
+  border: 1px solid #d8b995;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* สไตล์ Navbar */
+.navbar-custom {
+  background-color: #4e0d11; /* สีแดงน้ำตาลเข้ม */
+  padding: 10px 30px;
+}
+
+/* โลโก้หรือชื่อเว็บไซต์ */
+.navbar-custom .navbar-brand {
+  color: #f5e3c8; /* สีครีม */
+  font-family: 'Pridi', serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: #fff8ef;
+}
+
+/* ลิงก์ในเมนู */
+.navbar-custom .nav-link {
+  color: #f5e3c8; /* สีครีม */
+  font-family: 'Pridi', serif;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+/* เมื่อ hover */
+.navbar-custom .nav-link:hover {
+  color: #fff8ef; /* ครีมอ่อนขึ้น */
+}
+
+/* เมนูที่ active */
+.navbar-custom .nav-link.active {
+  color: #ffffff;
+  font-weight: 600;
+}
